@@ -1,0 +1,208 @@
+// Lessons_1 JS_Intro (let, if, console.log)
+// сохранение данных ctrl+s
+// объявление переменной без присвоения значений  let yolochka;  
+// присвоение значений yolochka = 12;
+
+let yolochka;
+
+yolochka = 12;
+
+// вывод в консоль 
+//console.log("Hello")
+
+// выведем в консоль переменную со значением 
+//console.log(yolochka)
+
+// let yolochka1 = 20;
+// console.log(yolochka1)
+
+let yolochka2 = 50
+
+// let result = yolochka1 + yolochka2;
+
+// console.log(result)
+
+// js склеивает два разных значения, например yolochka1 + hello --> выведет 20hello
+
+// создание переменных одной строкой 
+// let n1 = 10; let n2 = 30;
+// console.log(n1, n2)
+
+// или 
+
+// let n3 = 10,
+    // n4 = 30,
+    // yolochka3 = 100, 
+    // n5 = 200;
+
+// console.log(n3)
+// console.log(n4)
+// console.log(yolochka3)
+// console.log(n5)
+
+// просмотр типа переменных. 
+// let let_type1 = typeof yolochka3;
+// let let_type2 = typeof yolochka2;
+
+// console.log(let_type1)
+// console.log(let_type2)
+
+//  булевые значения
+// let bool_true = true;
+// let bool_false = false;
+
+// console.log(bool_true) 
+// console.log(bool_false)
+// console.log(typeof(bool_false));
+
+// let b_1 = bool_true + bool_false;
+
+// console.log(b_1)
+// console.log(typeof(b_1))
+
+//  если привести булевые зачения к численным, то true будет = 1,  bool_false = 0 
+
+// let bool_true = +true;
+// let bool_false = +false;
+
+// console.log(bool_true) 
+// console.log(bool_false)
+
+
+// В java script при делении на 0 = infinity
+// let b_1 = bool_true / bool_false;
+// console.log(b_1)
+
+
+// Конкатенация - объеденение, склейка, слияние. 
+// изменение числ на строку  - взятие в "..."
+
+// let n3 = 31,
+//      n4 = 30,
+//      yolochka3 = "100", 
+//      n5 = 200;
+
+// cравнение чисел 
+
+// let compare1 = n3 > n4;
+
+// console.log(compare1)
+// console.log(typeof(compare1))   // возращается булевый тип данных
+
+// let compare1 = n3 < n4;
+// console.log(compare1)
+// console.log(typeof(compare1)) 
+
+// == сравнение (при == сравниваются значения), при === сравниваются типы данных 
+// let compare1 = n3 == n4;
+// console.log(compare1)
+// console.log(typeof(compare1)) 
+
+// >= больше либо равно
+// let compare1 = n3 >= n4;
+// console.log(compare1)
+// console.log(typeof(compare1)) 
+
+// != не равно
+// let compare1 = n3 != n4;
+// console.log(compare1)
+// console.log(typeof(compare1))
+
+
+
+// let sum_body = yolochka3 + n4;
+
+// let let_type1 = typeof(sum_body);
+
+// console.log(sum_body)
+// console.log(let_type1)
+
+
+// Приведение типов в Java script
+// let sum_body = +yolochka3 + n4;
+// console.log(sum_body)
+
+// let sum_body_int = parseInt(yolochka3 + n4);
+// console.log(sum_body_int)
+
+
+// _____________________________________________________________
+
+// console.log("______________________________")
+
+// let condition = true
+
+// if (condition) {
+//     let t_1 = 5;
+//     let t_2 = 10;
+//     let result = t_1 + t_2 
+//     console.log("IF_RESULT" + result)
+// }
+
+
+
+
+// console.log("______________________________")
+
+// let compare1 = n3 > n4;
+// let compare2 = n3 < n4;
+
+// // let condition = true
+
+// if (compare1) {
+//     console.log("IF_RESULT = compare1 " + compare1)
+// } else if (compare2) {
+//     console.log("IF_RESULT = compare2" + compare2)
+// }else {
+//     console.log("IF_ELSE = " + compare1)
+// }
+
+
+
+
+// console.log("______________________________")
+
+
+// let n3 = 29,
+//      n4 = 30,
+//      yolochka3 = "100", 
+//      n5 = 200;
+
+// let compare1 = n3 > n4;
+// let compare2 = n3 < n4;
+
+// // let condition = true
+
+// if (compare1) {
+//     console.log("IF_RESULT = compare1 " + compare1)
+// } else if (compare2) {
+//     console.log("IF_RESULT = compare2" + compare2)
+// }else {
+//     console.log("IF_ELSE = " + compare1)
+// }
+
+// консоль возвращает IF_RESULT = compare2true
+
+
+console.log("______________________________")
+
+
+let n3 = 30,
+     n4 = 30,
+     yolochka3 = "100", 
+     n5 = 200;
+
+let compare1 = n3 > n4;
+let compare2 = n3 < n4;
+
+// let condition = true
+
+if (compare1) {
+    console.log("IF_RESULT = compare1 " + compare1)
+} else if (compare2) {
+    console.log("IF_RESULT = compare2" + compare2)
+}else {
+    console.log("IF_ELSE = " + compare1)
+}
+
+// консоль возвращает IF_ELSE = false

@@ -1,0 +1,154 @@
+// 2 урок "Функции, циклы while true и for (2 вида (создание в скобках сздание переменной "от" "до", с инкрементом ++) + for (как в pyhone, одним for итерирование объекта), switch case
+//   два пайплайера || логическое "ИЛИ". 
+
+// console.log(true || true)
+
+// if (1 || 0) {
+//     console.log ("Hello")
+// }
+
+//  Если время меньше 18, то открыто, если время больше или равно 18 - закрыто. 
+// let hour = 5
+// if (hour < 18 ) {
+//     console.log ("Open")
+// } else if (hour >= 18 ) {
+// console.log ("Close")
+// }
+
+
+//  && - and
+// let hour = 15
+// if (hour < 18 && hour >= 8) {
+//     console.log ("Open")
+// } else {
+// console.log ("Close")
+// }
+
+
+// Сочетание and ||
+// let hour = 2
+// if (hour < 18 && hour >= 8) {
+//     console.log ("Open")
+// } else if (hour >= 24 || hour < 0) {
+// console.log ("Error")
+// } else 
+// console.log ("Close")
+
+// Условие в выходной день - не рабтает. 
+
+let hour = "Sunday"; 
+
+// if (hour < 18 && hour >= 8) {
+//     console.log ("Open")
+// } else if (hour >= 24 || hour < 0) {
+// console.log ("Error")
+// } else if (hour == "Sunday" || hour == "Saturday" ) { 
+// console.log ("Holiday_Close")}
+// else {
+//     console.log ("Close")
+// }
+
+
+
+// Функции JS 
+
+// function workDays(days, hours){
+//     console.log ("workDay =", days)
+//     console.log ("workHours =", hours)
+// }
+// workDays("Monday", 8)
+
+
+// Логика проверки на тип данных через функцию. 
+
+// function workDays(days, hours){
+
+//     if (typeof String(days) === 'string'){
+//         console.log ("workDay =", days)
+//     }
+//     console.log ("workHours =", hours)
+// }
+// workDays("Monday", 8)
+
+
+
+
+// function workDays(days, hours){
+//     if (typeof days == "string" && typeof hours == "number"){
+//     console.log ("workDay =", days)
+//     console.log ("workHours =", hours)
+// }
+// }
+
+// workDays("Monday", 8)
+
+
+// function workDays(day){
+//     // console.log(1);
+//     let h_days = ['Saturday', 'Sunday']
+//     let w_days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
+//     // console.log(2);
+//     if (typeof day === 'string'){
+//         // console.log(3);
+//         if (w_days.includes(day)){
+//             // console.log(4);
+//             return true
+//         }   else if (h_days.includes(day)){
+//             // console.log(5);
+//             return false
+//         }   else{
+//             // console.log(6);
+//             return false
+//         }
+//     } else {
+//         console.log("Error word not a Day title")
+//         return false
+//     }
+// }
+
+
+// // console.log(workDays("Sunday"))
+
+
+
+// function check_hours(hour){
+//     if (hour < 18 && hour >= 8) {
+//         return true 
+//     } else if (hour >=24 || hour < 0) {
+//         return false
+//     }
+// }
+
+
+
+// let day = "Monday"
+// let hours = 9
+
+
+// if (workDays(day) && check_hours(hours)){
+//     console.log("Open")
+// } else {
+//     console.log("Close")
+// }
+
+
+
+
+
+//  Конструкция switch case
+
+let test_day = "Saturday"
+
+switch (test_day){
+    case "Saturday":
+        console.log("Cool! Saturday")
+        break;
+    case "Monday":
+        console.log("Cool! Monday")
+        break;
+    case "Sunday":
+        console.log("Cool Sunday")
+        break;
+    default:
+        console.log("Default!!!")
+}      
